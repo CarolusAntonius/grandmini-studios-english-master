@@ -111,7 +111,6 @@ main img:hover,
 }
 
 main {
-  background-image: url(bilder/slaget-vid-narva-tva.webp);
   background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
@@ -187,21 +186,12 @@ img {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
   }
-  main {
-    background-image: url(bilder/slaget-vid-narva-tva.webp);
-  }
 }
-@media (min-width: 589px) {
-  main {
-    background-image: url(bilder/slaget-vid-narva.webp);
-  }
-}
+
 @media (max-width: 839px) {
-p,
-main a,
-li {
-  font-size: max(3.3vw, 18px);
-}  
+    .lanseringsfilmsdel {
+    display: none !important;
+  }
   .steamdeltva,
   .steamdeltre {
     min-width: 100px;
@@ -245,4 +235,17 @@ li {
 .grandministudios-logga {
   width: 6vw;
   min-width: 50px;
+}
+.youtubedel {
+  padding-top: 1vw;
+  min-width: 250px;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  background-position: center;
+  background-size: cover;
+}
+.youtubedel iframe {
+  min-width: 550px;
+  width: 35vw;
 }
